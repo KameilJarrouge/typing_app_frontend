@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
+import { getToken, setToken } from "../../helpers/kamil/token";
 
 function Container() {
-  return <div>Container</div>;
+  let navigate = useNavigate();
+
+  let token = getToken();
+  useEffect(() => {
+    if (token) {
+      navigate("index");
+    } else {
+      navigate("login");
+    }
+  }, []);
+  return (
+    <div className="w-full h-full">
+      <Outlet />
+    </div>
+  );
 }
 
 export default Container;
