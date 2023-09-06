@@ -5,14 +5,16 @@ import { setToken } from "../../helpers/kamil/token";
 import { useNavigate } from "react-router-dom";
 import AuthFormContainer from "./AuthFormContainer";
 
-function LoginForm({ toSignup = (f) => f }) {
+function SignupForm({ toLogin = (f) => f }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const navigate = useNavigate();
+
   return (
     <div className="flex flex-col gap-8 items-center 2xl:scale-125">
       <div className="text-2xl font-bold text-onBackground animate-pulse  ">
-        Welcome back
+        Welcome
       </div>
       <AuthFormContainer>
         <InputField
@@ -26,20 +28,26 @@ function LoginForm({ toSignup = (f) => f }) {
           state={password}
           setState={setPassword}
         />
+        <InputField
+          type="password"
+          placeholder={"confirm password"}
+          state={confirmPassword}
+          setState={setConfirmPassword}
+        />
         <SubmitButton
-          title={"Login"}
+          title={"Register"}
           onClick={() => {
             setToken("Hello");
             navigate("/kamil/index");
           }}
         />
         <div className="text-onBackground/70 text-sm">
-          Not a user yet?{" "}
+          Already a user?{" "}
           <span
             className="text-onSecondary cursor-pointer"
-            onClick={() => toSignup()}
+            onClick={() => toLogin()}
           >
-            Register
+            Login
           </span>
         </div>
       </AuthFormContainer>
@@ -47,4 +55,4 @@ function LoginForm({ toSignup = (f) => f }) {
   );
 }
 
-export default LoginForm;
+export default SignupForm;
