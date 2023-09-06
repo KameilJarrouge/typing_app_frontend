@@ -1,5 +1,5 @@
 import React from "react";
-import OldTries from "../../Components/OldTries";
+import OldTries from "../../Components/Rani/OldTries";
 
 const AllOldTries = () => {
   return (
