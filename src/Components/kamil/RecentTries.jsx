@@ -3,7 +3,9 @@ import SubmitButton from "./SubmitButton";
 import RecentTry from "./RecentTry";
 function RecentTries() {
   const [recentTries, setRecentTries] = useState([
-    { title: "test", wpm: 40, percent: "95%", date: "19-05-1998" },
+    { title: "test", wpm: 40, percent: 95, date: "19-05-1998 12:00AM" },
+    { title: "test", wpm: 40, percent: 95, date: "19-05-1998 12:00PM" },
+    { title: "test", wpm: 40, percent: 95, date: "19-05-1998 12:00AM" },
   ]);
   return (
     <div className="flex flex-col items-center  w-full h-full gap-8">
@@ -13,7 +15,7 @@ function RecentTries() {
         <SubmitButton title={"All"} primaryColor />
       </div>
       {/* Body */}
-      <div className="flex flex-col w-full gap-4 px-8 h-fit overflow-y-scroll">
+      <div className="flex flex-col w-full gap-4 px-8 py-2 h-fit overflow-y-scroll scrollbar-none ">
         {recentTries.map((recentTry) => (
           <RecentTry recentTry={recentTry} />
         ))}

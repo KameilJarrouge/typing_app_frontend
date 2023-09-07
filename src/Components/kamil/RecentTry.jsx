@@ -1,6 +1,8 @@
 import React from "react";
 import SubmitButton from "./SubmitButton";
-
+import RecentTryInfo from "./RecentTryInfo";
+import { MdDateRange, MdPercent, MdRestartAlt, MdSpeed } from "react-icons/md";
+import ActionButton from "./ActionButton";
 function RecentTry({ recentTry }) {
   return (
     <div
@@ -8,15 +10,26 @@ function RecentTry({ recentTry }) {
     bg-white rounded-md px-2 py-4 
     border border-onBackground/20 shadow shadow-onBackground/30"
     >
-      <div className="flex gap-4">
+      <div className="flex gap-4 items-center">
         <div className="min-w-[30ch]">{recentTry.title}</div>
-        <div className="h-auto w-[2px] bg-onBackground/30"></div>
-        <div>WPM:{recentTry.wpm}</div>
-        <div>{recentTry.percent}</div>
-        <div>{recentTry.date}</div>
+        <RecentTryInfo
+          value={recentTry.wpm}
+          icon={<MdSpeed className="w-[1.25rem] h-auto" />}
+        />
+        <RecentTryInfo
+          value={recentTry.percent}
+          icon={<MdPercent className="w-[1.25rem] h-auto" />}
+        />
+        <RecentTryInfo
+          value={recentTry.date}
+          icon={<MdDateRange className="w-[1.25rem] h-auto" />}
+        />
       </div>
       <div className="">
-        <SubmitButton title={"Try Again"} primaryColor />
+        <ActionButton
+          title={<MdRestartAlt className="w-[1.25rem] h-auto" />}
+          primaryColor
+        />
       </div>
     </div>
   );
