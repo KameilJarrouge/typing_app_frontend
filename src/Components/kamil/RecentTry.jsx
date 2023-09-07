@@ -10,8 +10,8 @@ function RecentTry({ recentTry }) {
     bg-white rounded-md px-2 py-4 
     border border-onBackground/20 shadow shadow-onBackground/30"
     >
-      <div className="flex gap-4 items-center">
-        <div className="min-w-[30ch]">{recentTry.title}</div>
+      <div className="min-w-[30ch]">{recentTry.title}</div>
+      <div className="flex gap-4">
         <RecentTryInfo
           value={recentTry.wpm}
           icon={<MdSpeed className="w-[1.25rem] h-auto" />}
@@ -24,8 +24,6 @@ function RecentTry({ recentTry }) {
           value={recentTry.date}
           icon={<MdDateRange className="w-[1.25rem] h-auto" />}
         />
-      </div>
-      <div className="">
         <ActionButton
           title={<MdRestartAlt className="w-[1.25rem] h-auto" />}
           primaryColor
