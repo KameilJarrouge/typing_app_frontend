@@ -5,6 +5,8 @@ import Chooser from "./pages/Chooser";
 import Login from "./pages/kamil/Login";
 import Index from "./pages/kamil/Index";
 import Dashboard from "./pages/kamil/Dashboard";
+import AllTries from "./pages/kamil/AllTries";
+import AllTexts from "./pages/kamil/AllTexts";
 function App() {
   return (
     <div className={`h-screen w-full`}>
@@ -15,6 +17,8 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="index" element={<Index />}>
             <Route index element={<Dashboard />}></Route>
+            <Route path="recent-tries" element={<AllTries />}></Route>
+            <Route path="all-texts" element={<AllTexts />}></Route>
           </Route>
         </Route>
       </Routes>

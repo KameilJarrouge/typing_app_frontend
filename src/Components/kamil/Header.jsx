@@ -18,7 +18,12 @@ function Header() {
       </div>
 
       {/* CENTER */}
-      <div className="text-onBackground font-extrabold">LOGO</div>
+      <div
+        className="text-onBackground font-extrabold cursor-pointer hover:animate-pulse"
+        onClick={() => navigate("/kamil/index")}
+      >
+        LOGO
+      </div>
 
       {/* RIGHT */}
       <div className="min-w-[25%] flex justify-end">
