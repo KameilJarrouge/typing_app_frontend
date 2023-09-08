@@ -5,7 +5,7 @@ import AllOldTries from "./AllOldTries";
 function Container() {
   return (
     <div>
-      <AllOldTries />
+      <Main />
     </div>
   );
 }
