@@ -1,16 +1,21 @@
 import React from "react";
-import OldTries from "./OldTries";
+import OldTries from "../../Components/Rani/OldTries";
 import NewTexts from "./NewTexts";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const navigate = useNavigate();
   return (
-    <div className=" flex flex-col h-full">
+    <div className=" flex flex-col ">
       <div className=" flex justify-between items-center h-[64px] p-5 bg-secondary">
         <div className="  p-3 font-bold ">Username</div>
-        <button className=" bg-primary h-14 w-14 rounded-full font-bold">
+        <button className=" bg-primary h-14 w-14 rounded-full font-bold ">
           Logo
         </button>
-        <button className=" bg-primary hover:bg-onSecondary p-3 font-bold rounded-xl">
+        <button
+          className=" bg-primary hover:bg-onSecondary p-3 font-bold rounded-xl"
+          onClick={() => navigate("/Login")}
+        >
           LogOut
         </button>
       </div>

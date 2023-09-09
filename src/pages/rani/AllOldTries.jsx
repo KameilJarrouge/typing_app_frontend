@@ -3,39 +3,42 @@ import OldTries from "../../Components/Rani/OldTries";
 
 const AllOldTries = () => {
   return (
-    <div>
-      <div className=" flex items-center justify-between h-28">
+    <div className=" bg-secondary gap-5">
+      <div className=" flex justify-center gap-5 items-center p-2">
         <div>
           <input
-            className=" rounded-full bg-black p-3 w-72"
+            className=" rounded-full bg-onPrimary p-3 w-72"
             placeholder="Search by title"
           />
         </div>
         <div className=" flex gap-6">
-          <div className="flex gap-3 bg-slate-700 p-3 rounded-md hover:bg-slate-400 cursor-pointer">
+          <div className="flex gap-3 border-r border-l border-black p-3 rounded-md hover:bg-background cursor-pointer">
             wpm
             <button>
               <select />
             </button>
           </div>
-          <div className=" flex gap-3 bg-slate-700 p-3 rounded-md hover:bg-slate-400 cursor-pointer">
+          <div className=" flex gap-3 border-r border-l border-black p-3 rounded-md hover:bg-background cursor-pointer">
             %
             <button>
               <select />
             </button>
           </div>
-          <div className=" flex gap-3 bg-slate-700 p-3 rounded-md hover:bg-slate-400 cursor-pointer">
+          <div className=" flex gap-3 border-r border-l border-black p-3 rounded-md hover:bg-background cursor-pointer">
             Tries
             <button>
               <select />
             </button>
           </div>
         </div>
-        <div className=" flex gap-3 bg-slate-700 p-3 rounded-md hover:bg-slate-400 cursor-pointer">
+        <div className=" flex gap-3 font-bold  bg-primary p-3 rounded-2xl hover:bg-onSecondary cursor-pointer">
           <button>Search</button>
         </div>
       </div>
       <div className=" flex flex-col gap-3">
+        <OldTries />
+        <OldTries />
+        <OldTries />
         <OldTries />
         <OldTries />
         <OldTries />

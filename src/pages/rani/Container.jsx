@@ -1,12 +1,12 @@
 import React from "react";
-import Main from "../../Components/Rani/Main";
+import Main from "./Main";
 import AllOldTries from "./AllOldTries";
-import SignUp from "../../Components/Rani/SignUp";
-
+import SignUp from "./SignUp";
+import ToLogin from "./ToLogin";
 function Container() {
   return (
     <div>
-      <Login />
+      <ToLogin />
     </div>
   );
 }
