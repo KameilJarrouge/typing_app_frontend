@@ -3,7 +3,7 @@ import OldTries from "../../Components/Rani/OldTries";
 
 const AllOldTries = () => {
   return (
-    <div className=" bg-secondary gap-5">
+    <div className=" bg-background gap-5">
       <div className=" flex justify-center gap-5 items-center p-2">
         <div>
           <input
@@ -12,19 +12,19 @@ const AllOldTries = () => {
           />
         </div>
         <div className=" flex gap-6">
-          <div className="flex gap-3 border-r border-l border-black p-3 rounded-md hover:bg-background cursor-pointer">
+          <div className="flex gap-3 border-r border-l border-black p-3 rounded-md hover:bg-onSecondary cursor-pointer">
             wpm
             <button>
               <select />
             </button>
           </div>
-          <div className=" flex gap-3 border-r border-l border-black p-3 rounded-md hover:bg-background cursor-pointer">
+          <div className=" flex gap-3 border-r border-l border-black p-3 rounded-md hover:bg-onSecondary cursor-pointer">
             %
             <button>
               <select />
             </button>
           </div>
-          <div className=" flex gap-3 border-r border-l border-black p-3 rounded-md hover:bg-background cursor-pointer">
+          <div className=" flex gap-3 border-r border-l border-black p-3 rounded-md hover:bg-onSecondary cursor-pointer">
             Tries
             <button>
               <select />

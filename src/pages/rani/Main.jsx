@@ -1,6 +1,6 @@
 import React from "react";
 import OldTries from "../../Components/Rani/OldTries";
-import NewTexts from "./NewTexts";
+import NewText from "../../Components/Rani/NewText";
 import { useNavigate } from "react-router-dom";
 
 const Main = () => {
@@ -23,7 +23,10 @@ const Main = () => {
         <div className=" flex-[70%] w-[900px] h-[calc(100%-64px)] bg-background">
           <div className=" flex justify-center pt-5">
             <div className=" font-bold mr-5 p-2">Recent Tries</div>
-            <button className=" bg-primary rounded-xl hover:bg-onSecondary ml-5 p-2 ">
+            <button
+              className=" bg-primary rounded-xl hover:bg-onSecondary ml-5 p-2 "
+              onClick={() => navigate("/alltries")}
+            >
               All
             </button>
           </div>
@@ -40,7 +43,10 @@ const Main = () => {
           <div className=" text-center">
             <div className="mr-10 ml-10 mt-4 font-bold">New Texts</div>
             <div>
-              <button className=" mr-2 mt-4 bg-primary rounded-xl hover:bg-onSecondary w-32 p-2">
+              <button
+                className=" mr-2 mt-4 bg-primary rounded-xl hover:bg-onSecondary w-32 p-2"
+                onClick={() => navigate("/newtexts")}
+              >
                 ALL
               </button>
               <button className="ml-2 mt-4 bg-primary rounded-xl hover:bg-onSecondary w-32 p-2">
@@ -48,11 +54,13 @@ const Main = () => {
               </button>
             </div>
           </div>
-          <NewTexts />
-          <NewTexts />
-          <NewTexts />
-          <NewTexts />
-          <NewTexts />
+          <div>
+            <NewText />
+            <NewText />
+            <NewText />
+            <NewText />
+            <NewText />
+          </div>
         </div>
       </div>
     </div>

@@ -20,12 +20,12 @@ const SignUp = () => {
             />
             <input
               type="text"
-              placeholder="password"
+              placeholder="Password"
               className=" border-2 rounded-xl p-1 "
             />
             <input
               type="text"
-              placeholder="Confirm your Password"
+              placeholder="Confirm Your Password"
               className=" border-2 rounded-xl p-1 "
             />
           </div>
@@ -41,7 +41,7 @@ const SignUp = () => {
                 className=" font-semibold hover:text-onSecondary "
                 onClick={() => navigate("/Login")}
               >
-                Back to Login
+                Already a User
               </button>
             </p>
           </div>

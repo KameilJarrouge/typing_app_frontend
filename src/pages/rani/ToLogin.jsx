@@ -18,7 +18,7 @@ const ToLogin = () => {
             />
             <input
               type="text"
-              placeholder="password"
+              placeholder="Your Password"
               className=" border-2 rounded-xl p-1 "
             />
           </div>
@@ -34,7 +34,7 @@ const ToLogin = () => {
                 className=" font-semibold hover:text-onSecondary "
                 onClick={() => navigate("/SignUp")}
               >
-                Create an account
+                Create an Account
               </button>
             </p>
           </div>

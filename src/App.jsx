@@ -10,6 +10,9 @@ import AllTexts from "./pages/kamil/AllTexts";
 import Main from "./pages/rani/Main";
 import SignUp from "./pages/rani/SignUp";
 import ToLogin from "./pages/rani/ToLogin";
+import AllOldTries from "./pages/rani/AllOldTries";
+import NewText from "./Components/kamil/NewText";
+import NewTexts from "./pages/rani/NewTexts";
 function App() {
   return (
     <div className={`h-screen w-full`}>
@@ -17,6 +20,8 @@ function App() {
         <Route path="/" element={<Chooser />}></Route>
         <Route path="/rani" element={<RaniContainer />}></Route>
         <Route path="/main" element={<Main />}></Route>
+        <Route path="/alltries" element={<AllOldTries />}></Route>
+        <Route path="/newtexts" element={<NewTexts />}></Route>
         <Route path="/SignUp" element={<SignUp />}></Route>
         <Route path="/Login" element={<ToLogin />}></Route>
         <Route path="/kamil" element={<KamilContainer />}>
