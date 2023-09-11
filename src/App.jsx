@@ -13,17 +13,23 @@ import ToLogin from "./pages/rani/ToLogin";
 import AllOldTries from "./pages/rani/AllOldTries";
 import NewText from "./Components/kamil/NewText";
 import NewTexts from "./pages/rani/NewTexts";
+import Body from "./Components/Rani/Body";
 function App() {
   return (
     <div className={`h-screen w-full`}>
       <Routes>
         <Route path="/" element={<Chooser />}></Route>
-        <Route path="/rani" element={<RaniContainer />}></Route>
-        <Route path="/main" element={<Main />}></Route>
-        <Route path="/alltries" element={<AllOldTries />}></Route>
-        <Route path="/newtexts" element={<NewTexts />}></Route>
-        <Route path="/SignUp" element={<SignUp />}></Route>
-        <Route path="/Login" element={<ToLogin />}></Route>
+
+        <Route path="/rani" element={<RaniContainer />}>
+          <Route path="SignUp" element={<SignUp />}></Route>
+          <Route index element={<ToLogin />}></Route>
+          <Route path="main" element={<Main />}>
+            <Route index element={<Body />}></Route>
+            <Route path="alltries" element={<AllOldTries />}></Route>
+            <Route path="newtexts" element={<NewTexts />}></Route>
+          </Route>
+        </Route>
+
         <Route path="/kamil" element={<KamilContainer />}>
           <Route path="login" element={<Login />} />
           <Route path="index" element={<Index />}>

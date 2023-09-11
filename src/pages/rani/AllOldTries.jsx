@@ -3,7 +3,7 @@ import OldTries from "../../Components/Rani/OldTries";
 
 const AllOldTries = () => {
   return (
-    <div className=" bg-background gap-5">
+    <div className=" bg-background gap-5 w-full">
       <div className=" flex justify-center gap-5 items-center p-2">
         <div>
           <input

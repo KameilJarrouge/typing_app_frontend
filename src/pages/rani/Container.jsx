@@ -3,10 +3,11 @@ import Main from "./Main";
 import AllOldTries from "./AllOldTries";
 import SignUp from "./SignUp";
 import ToLogin from "./ToLogin";
+import { Outlet } from "react-router-dom";
 function Container() {
   return (
-    <div>
-      <ToLogin />
+    <div className=" w-full h-full ">
+      <Outlet />
     </div>
   );
 }

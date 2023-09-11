@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ToLogin = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col gap-5 bg-[url(./public/typing.png)] items-center justify-center h-screen">
+    <div className="flex flex-col gap-5 bg-[url(/typing.png)] items-center justify-center h-screen bg-cover">
       <div>
         <h2 className=" text-2xl animate-pulse font-bold text-center">Login</h2>
       </div>
@@ -25,14 +25,14 @@ const ToLogin = () => {
           <div className="flex-col text-center mt-4">
             <button
               className=" mb-2 bg-primary hover:bg-onSecondary p-2 rounded-xl text-white "
-              onClick={() => navigate("/main")}
+              onClick={() => navigate("main")}
             >
               Login
             </button>
             <p className=" ">
               <button
                 className=" font-semibold hover:text-onSecondary "
-                onClick={() => navigate("/SignUp")}
+                onClick={() => navigate("SignUp")}
               >
                 Create an Account
               </button>
