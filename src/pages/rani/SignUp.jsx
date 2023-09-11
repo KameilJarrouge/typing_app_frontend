@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const [Username, setUsername] = useState("");
+  const [Password, setPassword] = useState("");
+  const [Password2, setPassword2] = useState("");
   const navigate = useNavigate();
   return (
     <div className="flex flex-col gap-5 bg-[url(/typing.png)] items-center justify-center h-screen bg-cover">
@@ -17,16 +20,19 @@ const SignUp = () => {
               type="text"
               placeholder="Username"
               className=" border-2 rounded-xl p-1 "
+              onChange={(e) => setUsername(e.target.value)}
             />
             <input
               type="text"
               placeholder="Password"
               className=" border-2 rounded-xl p-1 "
+              onChange={(e) => setPassword(e.target.value)}
             />
             <input
               type="text"
               placeholder="Confirm Your Password"
               className=" border-2 rounded-xl p-1 "
+              onChange={(e) => setPassword2(e.target.value)}
             />
           </div>
           <div className="flex-col text-center mt-4">

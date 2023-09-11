@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const ToLogin = () => {
+  const [username, setUsername] = useState("");
+  const [Password, setPassword] = useState("");
   const navigate = useNavigate();
   return (
     <div className="flex flex-col gap-5 bg-[url(/typing.png)] items-center justify-center h-screen bg-cover">
@@ -15,11 +17,13 @@ const ToLogin = () => {
               type="text"
               placeholder="Username"
               className=" border-2 rounded-xl p-1 "
+              onChange={(e) => setUsername(e.target.value)}
             />
             <input
               type="text"
               placeholder="Your Password"
               className=" border-2 rounded-xl p-1 "
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
           <div className="flex-col text-center mt-4">
