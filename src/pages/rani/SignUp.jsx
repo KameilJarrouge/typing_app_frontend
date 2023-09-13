@@ -19,19 +19,19 @@ const SignUp = () => {
             <input
               type="text"
               placeholder="Username"
-              className=" border-2 rounded-xl p-1 "
+              className=" border-2 rounded-xl p-1 focus:outline-none"
               onChange={(e) => setUsername(e.target.value)}
             />
             <input
               type="text"
               placeholder="Password"
-              className=" border-2 rounded-xl p-1 "
+              className=" border-2 rounded-xl p-1 focus:outline-none"
               onChange={(e) => setPassword(e.target.value)}
             />
             <input
               type="text"
               placeholder="Confirm Your Password"
-              className=" border-2 rounded-xl p-1 "
+              className=" border-2 rounded-xl p-1 focus:outline-none"
               onChange={(e) => setPassword2(e.target.value)}
             />
           </div>

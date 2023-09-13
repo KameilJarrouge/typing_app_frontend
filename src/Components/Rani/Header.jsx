@@ -7,13 +7,13 @@ const Header = () => {
     <div className=" flex justify-between items-center h-[64px] p-5 bg-secondary">
       <div className="  p-3 font-bold ">Username</div>
       <button
-        className=" bg-primary h-14 w-14 rounded-full font-bold "
+        className=" h-14 w-14 hover:animate-pulse rounded-full font-bold "
         onClick={() => navigate("/rani/main")}
       >
         Logo
       </button>
       <button
-        className=" bg-primary hover:bg-onSecondary p-3 font-bold rounded-xl"
+        className=" bg-primary  hover:bg-onSecondary p-3 font-bold rounded-md border-2 shadow-lg"
         onClick={() => navigate("/rani")}
       >
         LogOut
