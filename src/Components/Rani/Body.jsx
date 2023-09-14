@@ -1,6 +1,4 @@
 import React from "react";
-import OldTries from "./OldTries";
-import NewText from "./NewText";
 import Left from "./Left";
 import Right from "./Right";
 

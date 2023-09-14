@@ -1,5 +1,5 @@
 import React from "react";
-import { SlSpeedometer } from "react-icons/Sl";
+import { SlSpeedometer } from "react-icons/sl";
 const AllnewText = () => {
   return (
     <div className="flex flex-col w-full justify-center items-center">

@@ -1,7 +1,7 @@
 import React from "react";
 import { GiSpeedometer } from "react-icons/gi";
 import { MdDateRange } from "react-icons/md";
-// import { TbPercentage } from "react-icons/tb";
+import { TbPercentage } from "react-icons/tb";
 
 const OldTries = () => {
   return (
@@ -12,7 +12,7 @@ const OldTries = () => {
         </div>
         <div className=" flex ">
           <div className=" flex rounded-md bg-background border-2 items-center justify-center m-2 p-5">
-            {/* <TbPercentage /> */}%
+            <TbPercentage />
           </div>
           <div className=" flex rounded-md bg-background border-2 items-center justify-center m-2 p-5">
             <GiSpeedometer />

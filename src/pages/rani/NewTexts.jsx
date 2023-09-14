@@ -1,6 +1,6 @@
 import React from "react";
 import AllnewText from "../../Components/Rani/AllnewText";
-import { BsSearch } from "react-icons/Bs";
+import { BsSearch } from "react-icons/bs";
 
 const NewTexts = () => {
   return (

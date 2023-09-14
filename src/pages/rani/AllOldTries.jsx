@@ -1,6 +1,6 @@
 import React from "react";
 import OldTries from "../../Components/Rani/OldTries";
-import { BsSearch } from "react-icons/Bs";
+import { BsSearch } from "react-icons/bs";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { GiSpeedometer } from "react-icons/gi";
 
