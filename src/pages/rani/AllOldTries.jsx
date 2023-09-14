@@ -2,7 +2,7 @@ import React from "react";
 import OldTries from "../../Components/Rani/OldTries";
 import { BsSearch } from "react-icons/Bs";
 import { AiOutlineArrowDown } from "react-icons/ai";
-import { GiSpeedometer } from "react-icons/Gi";
+import { GiSpeedometer } from "react-icons/gi";
 
 const AllOldTries = () => {
   return (

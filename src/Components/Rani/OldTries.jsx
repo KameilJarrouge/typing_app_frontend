@@ -1,6 +1,6 @@
 import React from "react";
-import { GiSpeedometer } from "react-icons/Gi";
-import { MdDateRange } from "react-icons/Md";
+import { GiSpeedometer } from "react-icons/gi";
+import { MdDateRange } from "react-icons/md";
 // import { TbPercentage } from "react-icons/tb";
 
 const OldTries = () => {
