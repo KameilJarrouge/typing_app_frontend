@@ -4,9 +4,12 @@ import { BsSearch } from "react-icons/bs";
 
 const NewTexts = () => {
   return (
-    <div className="flex flex-col w-full gap-5 p-5 bg-background">
+    <div className="flex flex-col w-full p-7 bg-background">
       <div className=" flex justify-center">
-        <div className=" flex justify-center rounded-full bg-onPrimary gap-3">
+        <div
+          className=" flex justify-center rounded-full
+         bg-onPrimary gap-3 border-2 shadow-lg"
+        >
           <input
             className=" rounded-full bg-onPrimary p-3 w-72 focus:outline-none"
             placeholder="Search by title"
@@ -16,12 +19,11 @@ const NewTexts = () => {
            cursor-pointer hover:out"
           >
             <button>
-              <BsSearch />
+              <BsSearch className="hover:text-primary" />
             </button>
           </div>
         </div>
       </div>
-
       <div
         className=" flex justify-center overflow-hidden
       scrollbar-thin scrollbar-thumb-rounded-2xl

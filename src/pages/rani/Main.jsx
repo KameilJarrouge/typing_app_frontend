@@ -1,9 +1,6 @@
 import React from "react";
-import OldTries from "../../Components/Rani/OldTries";
-import NewText from "../../Components/Rani/NewText";
 import { Outlet, useNavigate } from "react-router-dom";
 import Header from "../../Components/Rani/Header";
-import Body from "../../Components/Rani/Body";
 
 const Main = () => {
   const navigate = useNavigate();

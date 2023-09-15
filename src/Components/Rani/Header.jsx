@@ -13,7 +13,7 @@ const Header = () => {
         Logo
       </button>
       <button
-        className=" bg-primary  hover:bg-onSecondary p-3 font-bold rounded-md shadow-lg"
+        className=" hover:bg-primary hover:text-white p-3 font-bold rounded-md  "
         onClick={() => navigate("/rani")}
       >
         LogOut

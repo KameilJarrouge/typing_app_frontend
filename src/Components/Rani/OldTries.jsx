@@ -6,9 +6,9 @@ import { TbPercentage } from "react-icons/tb";
 const OldTries = () => {
   return (
     <div className="  flex flex-col justify-center items-center">
-      <div className="shadow-lg flex h-16 gap-10 bg-onPrimary rounded-2xl border-2 justify-center border-solid ">
+      <div className="shadow-lg flex h-16 gap-10 bg-onPrimary rounded-2xl border-2 justify-center border-solid hover:border-onSecondary">
         <div className=" flex font-bold  border-r  border-gray-300 items-center justify-center p-5 m-2 w-96">
-          Titles
+          Title
         </div>
         <div className=" flex ">
           <div className=" flex rounded-md bg-background border-2 items-center justify-center m-2 p-5">

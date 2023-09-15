@@ -3,6 +3,7 @@ import OldTries from "../../Components/Rani/OldTries";
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { GiSpeedometer } from "react-icons/gi";
+import { TbPercentage } from "react-icons/tb";
 
 const AllOldTries = () => {
   return (
@@ -15,7 +16,7 @@ const AllOldTries = () => {
           />
           <div className=" flex gap-3 font-bold p-3 rounded-2xl cursor-pointer">
             <button>
-              <BsSearch />
+              <BsSearch className="hover:text-primary" />
             </button>
           </div>
         </div>
@@ -30,17 +31,17 @@ const AllOldTries = () => {
             </button>
           </div>
           <div
-            className=" flex gap-3  bg-secondary border-2 p-3 
+            className=" flex items-center gap-3  bg-secondary border-2 p-3 
           rounded-md shadow-md "
           >
-            %
+            <TbPercentage />
             <button>
               <AiOutlineArrowDown />
             </button>
           </div>
           <div
             className=" flex gap-3  bg-secondary border-2 p-3 
-            rounded-md shadow-md"
+            rounded-md shadow-md font-bold "
           >
             Tries
             <button>
@@ -49,7 +50,7 @@ const AllOldTries = () => {
           </div>
         </div>
       </div>
-      <div className=" flex flex-col gap-3 w-full">
+      <div className=" flex flex-col gap-3 w-full ">
         <OldTries />
         <OldTries />
         <OldTries />
